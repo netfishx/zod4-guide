@@ -1,21 +1,22 @@
 # zod4-guide
 
-A [Claude Code skill](https://docs.anthropic.com/en/docs/claude-code/skills) that teaches Claude the correct Zod 4 APIs, preventing it from falling back to outdated Zod 3 patterns.
+Zod 4 API guide for AI coding agents. Covers 30+ breaking changes from Zod 3, 9 new APIs, and 7 common pitfalls.
 
 ## Why?
 
-Claude's training data primarily contains Zod 3 syntax. When writing Zod schemas, it often generates deprecated patterns like `z.string().email()`, `{ message: "..." }`, or `z.record(valueSchema)` — all of which are wrong in Zod 4.
+AI agents' training data primarily contains Zod 3 syntax. When writing Zod schemas, they often generate deprecated patterns like `z.string().email()`, `{ message: "..." }`, or `z.record(valueSchema)` — all of which are wrong in Zod 4.
 
-This skill provides a quick-reference of **30+ breaking changes**, **9 new APIs**, and **7 common pitfalls** so Claude always uses the correct Zod 4 syntax.
+This skill ensures agents always use the correct Zod 4 syntax.
 
 ## Install
 
 ```bash
-# Clone into your Claude Code skills directory
-git clone https://github.com/<your-username>/zod4-guide.git ~/.claude/skills/zod4-guide
-```
+# Recommended: via skills CLI (auto-tracked on skills.sh)
+npx skills add netfishx/zod4-guide
 
-Or copy `SKILL.md` manually into `~/.claude/skills/zod4-guide/SKILL.md`.
+# Or: clone directly into Claude Code skills directory
+git clone https://github.com/netfishx/zod4-guide.git ~/.claude/skills/zod4-guide
+```
 
 ## What's Covered
 
@@ -26,7 +27,7 @@ Or copy `SKILL.md` manually into `~/.claude/skills/zod4-guide/SKILL.md`.
 ## Compatibility
 
 - Zod `^4.0.0`
-- Claude Code (any version with skills support)
+- Works with: Claude Code, Cursor, Windsurf, and any agent supporting [agent skills](https://vercel.com/kb/guide/agent-skills-creating-installing-and-sharing-reusable-agent-context)
 
 ## License
 

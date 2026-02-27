@@ -1,6 +1,10 @@
 ---
 name: zod4-guide
 description: Use when writing, reviewing, or debugging Zod schemas. Covers Zod 4 breaking changes from Zod 3, new APIs, and common pitfalls. Triggers on z.object, z.string, z.enum, z.record, z.refine, ZodError, schema validation, form validation, API response parsing.
+license: MIT
+metadata:
+  author: netfishx
+  version: "1.0.0"
 ---
 
 # Zod 4 API Guide
